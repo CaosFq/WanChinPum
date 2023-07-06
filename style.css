@@ -1,0 +1,137 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Estilos generales del cuerpo */
+body {
+  height: 100vh;
+  background-color: rgb(40, 38, 49);
+}
+
+/* Encabezado */
+header {
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cuadro de puntuación */
+.score-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.9em;
+}
+
+.score-container {
+  border: 2px solid white;
+  height: 100px;
+  width: 230px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  width: 40px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 45%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userlabel {
+  left: -1em;
+}
+
+.cpulabel {
+  right: -1em;
+}
+
+.points {
+  color: white;
+  font-size: 2em;
+}
+
+/* Creador */
+.creator {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+}
+
+.creator p {
+  font-size: 2em;
+  color: white;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.picturesbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.picture {
+  border: 2px solid white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 1.3em;
+  margin-right: 1.3em;
+  cursor: pointer;
+}
+
+.picture:hover {
+  animation-name: animation;
+  animation-iteration-count: 1;
+  animation-duration: 1000ms;
+  background-color: white;
+  transition: background-color 1000ms;
+}
+
+.rock {
+  background-image: url(../img/rock.png);
+}
+
+.paper {
+  background-image: url(../img/paper.png);
+}
+
+.scissors {
+  background-image: url(../img/scissors.png);
+}
+
+.movebox {
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.movebox p {
+  color: white;
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+
+@keyframes animation {
+  from {
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
